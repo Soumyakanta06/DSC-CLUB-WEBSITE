@@ -8,7 +8,8 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content:center;
-    max-height: 100vh;
+    /* min-height: 100vh; */
+    height: auto;
     overflow: hidden;
 }
 .nav {
@@ -154,25 +155,22 @@ padding: 10px 10px 13px 10px;
 .intro{
 display: grid;
 grid-template-columns: 30% 70%;
-}
-.video{
-  padding: 20px;
-  
-  
+width: 100vw;
 }
 .video img{
-  /* position: relative;
-  left: -30%; */
-  /* transform: ; */
+  position: relative;
+  left: 10%;
 }
+
 .content{ 
   vertical-align:center;
-  padding:20px;
+  /* padding:20px; */
 }
 .content h2{
   font-size:4.6rem;
-  /* margin-top: 20px; */
-  transform: translate(20%,60%);
+position:relative;
+right: -20%;
+  transform: translate(0%,50%);
   padding: 20px;
 }
 .type{
@@ -181,4 +179,11 @@ grid-template-columns: 30% 70%;
 }
 .content h2 span{
   font-size:3rem;
+}
+@media screen and (max-width:866px) {
+  .intro{ 
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  
 }
