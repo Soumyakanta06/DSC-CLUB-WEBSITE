@@ -65,8 +65,8 @@ body {
   font-size: 1rem;
 }
 .card:hover {
-  transform: scale(1.02);
-  transition: 250ms ease-in-out;
+  transform: scale(1.023);
+  transition: 300ms ease-in-out;
   cursor: pointer;
 }
 
