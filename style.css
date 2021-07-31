@@ -24,6 +24,7 @@ body {
   padding: 2% 0% 2% 0%;
 }
 .card {
+
   display: grid;
   grid-template-columns: 300px;
   grid-template-rows: 180px 180px 80px;
@@ -32,7 +33,7 @@ body {
   height: fit-content !important;
   font-family: "Gowun Dodum", sans-serif;
   border-radius: 20px !important;
-  background: rgb(250, 235, 235);
+  background: rgba(253, 242, 242, 0.74) !important;
   text-align: center;
   margin: 15px;
 }
@@ -45,19 +46,23 @@ body {
 }
 
 .card-title {
+  
   font-family: "Gowun Dodum", sans-serif;
   font-weight: 700;
 }
 
 .card-text {
+  background-blend-mode: lighten;
   grid-area: text;
   text-align: justify;
+  font-size: 0.9rem;
   font-family: "Montserrat", sans-serif;
 }
 
 .card-text-footer {
   font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 1rem;
 }
 .card:hover {
   transform: scale(1.02);
@@ -76,8 +81,11 @@ body {
     width: 300px !important;
     height: fit-content !important;
   }
-  img {
-    height: 249px;
+  .card-text{
+    font-size: 0.8rem;
+  }
+  img{
+    height: 170px;
   }
 }
 
@@ -87,6 +95,10 @@ body {
     width: 280px !important;
     height: fit-content !important;
   }
+  .card-text{
+    font-size: 0.8rem;
+  }
+  
 }
 
 @media screen and (max-width: 968px) {
@@ -94,6 +106,13 @@ body {
     display: grid;
     width: 240px !important;
     height: fit-content !important;
+  }
+  .card-title{
+    font-size: 1rem;
+  }
+
+  .card-text{
+    font-size: 0.8rem;
   }
 
   img {
@@ -107,13 +126,35 @@ body {
     width: 200px !important;
     height: fit-content !important;
   }
+
+  .card-title{
+    font-size: 1rem;
+  }
+
+  .card-text{
+    font-size: 0.8rem;
+  }
+
+  img{
+    height: 130px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .card {
     display: grid;
-    width: 195px !important;
+    width: 200px !important;
     height: fit-content !important;
+  }
+
+  .card-title{
+    font-size: 1rem;
+  }
+  .card-text {
+    grid-area: text;
+    text-align: var(--bs-gutter-x);
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.78rem;
   }
 
   img {
@@ -124,7 +165,9 @@ body {
 @media screen and (max-width: 480px) {
   .card {
     display: grid;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
     width: 320px !important;
     height: fit-content !important;
   }
