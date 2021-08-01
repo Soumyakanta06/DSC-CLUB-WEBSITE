@@ -23,9 +23,9 @@ body{
     width: 491px;
     margin: auto;
 }
-.contents{
+/* .contents{
     /* border: 2px solid yellow; */
-}
+/* } */ */
 .logo{
     position: relative;
     top: -34px;
