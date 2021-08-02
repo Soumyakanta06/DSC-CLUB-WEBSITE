@@ -37,12 +37,13 @@ body{
   background: rgba(253, 242, 242, 0.74) !important;
   text-align: center;
   margin: 15px;
+  padding: 0 !important;
 }
 
-.card-image {
+.card img {
   grid-area: image;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;
   background-size: cover;
 }
 
@@ -58,6 +59,7 @@ body{
   text-align: justify;
   font-size: 0.9rem;
   font-family: "Montserrat", sans-serif;
+  padding: 15px;
 }
 
 .card-text-footer {
@@ -158,7 +160,7 @@ body{
     font-size: 0.78rem;
   }
 
-  img {
+  .card img {
     height: 125px;
   }
 }
@@ -173,7 +175,7 @@ body{
     width: 350px !important;
     height: fit-content !important;
   }
-  img {
+  .card img {
     height: 200px !important;
     width: initial;
   }
@@ -189,7 +191,7 @@ body{
     width: 320px !important;
     height: fit-content !important;
   }
-  img {
+  .card img {
     height: initial;
     width: initial;
   }
@@ -215,7 +217,7 @@ body{
 /* } */ 
 .foot-logo{
     position: relative !important;
-    top: -34px !important;
+    top: -45px !important;
     /* border: 2px solid red; */
     display: inline-block !important;
     width: 63px !important;
@@ -224,13 +226,16 @@ body{
     padding-left: 4px !important;
 }
 .foot-img{
-    width: 50px !important;
+    width: 60px !important;
+    height: 30px;
 }
 .heading{
     display: inline-block !important;
     /* border: 2px solid orange; */
-    margin-left: 5px !important;
+    margin-left: 20px !important;
     font-family: 'Asap Condensed', sans-serif !important;
+    position: relative !important;
+    bottom: -70%;
 }
 
 .contents-para{
@@ -297,6 +302,10 @@ body{
     background-color: transparent;
     font-weight: bolder;
     font-family: 'Open Sans', sans-serif;
+    line-height: 25px;
+}
+.col3-para .fa-map-marker-alt{
+  line-height: 25px !important;
 }
 .col3-socialmedia{
     /* border: 2px solid red; */
@@ -417,17 +426,20 @@ hr{
 }
 
 @media screen and (max-width:512px) and (min-width:367px){
-    .foot-logo {
+    /* .foot-logo {
         left: -7px !important;
          top: -9px !important;
+    } */
+    .contents-para {
+      font-size: 15px !important;
     }
 }
 @media screen and (max-width:366px){
  
-    .foot-logo{
+    /* .foot-logo{
         top: -8px !important;
         left: -4px !important;
-    }
+    } */
     .col3{
         left: -22px;
     }
