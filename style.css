@@ -427,20 +427,20 @@ hr{
 }
 
 @media screen and (max-width:512px) and (min-width:367px){
-    /* .foot-logo {
+    .foot-logo {
         left: -7px !important;
          top: -9px !important;
-    } */
+    }
     .contents-para {
       font-size: 15px !important;
     }
 }
 @media screen and (max-width:366px){
  
-    /* .foot-logo{
+    .foot-logo{
         top: -8px !important;
         left: -4px !important;
-    } */
+    }
     .col3{
         left: -22px;
     }
