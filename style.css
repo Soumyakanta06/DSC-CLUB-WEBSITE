@@ -388,6 +388,65 @@ body{
 /* What We Do section */
 /* ----------------------- */
 
+
+
+/* Connect with us */
+.social-container {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #bcfc0c, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 5s ease-in-out infinite;
+  	width: 100%;
+	height: 17rem;
+	margin-bottom:3%;
+  box-shadow: rgb(37, 35, 35) 5px 5px 15px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#connect-head {
+  padding-top: 3%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+
+.list-inline {
+  text-align: center;
+  margin-top: 2%;
+  /* margin: 0% 12% 2% 36%; */
+}
+.list-inline a{
+  font-size: 3rem;
+  margin: 0% 2% 0 2%;
+}
+.fa-facebook{
+  color: #3B5998;
+}
+.fa-instagram{
+  color: #bc2a8d;
+}
+.fa-linkedin{
+  color:#007bb5;
+}
+.fa-twitter{
+  color: #55ACEE;
+}
+
+/* Connect with us */
+
+
+
+
 /* EVERYTHING IN THE FOOTER */
 .foot-row{
     display: flex;
