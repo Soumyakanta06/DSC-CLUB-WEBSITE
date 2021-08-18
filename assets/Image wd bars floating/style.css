@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+min-height: 100vh;
+background-color: rgb(121, 117, 117)
+}
+.contt{
+    justify-content: center;
+}
+.contt h2{
+    font-size: 4.5rem;
+    /* text-align: center; */
+}
+.contt img{
+    width: 80%;
+    justify-content: center;
+    /* height: 50px; */
+}
+.imgr{
+    border-radius: 80%;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+
+}
+.imgr img{
+    border-radius: 50%;
+}
+.insta,
+.fb,.twi,.linkd{
+    border: 2px solid black;
+    width: 30%;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+.insta{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    animation-name: updown;
+    animation-duration: 2.5s;
+    -webkit-animation-iteration-count: infinite;
+    border: none;
+    
+}
+.fb{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    /* left: %;   */
+    animation-name: updown2;
+    animation-duration: 2.5s;
+    -webkit-animation-iteration-count: infinite;
+}
+.twi{
+    position: absolute;
+    bottom: 25%;
+    right: 1%; 
+    animation-name: updown3;
+    animation-duration: 2.5s;
+    -webkit-animation-iteration-count: infinite;
+}
+.linkd{
+    position: absolute;
+    top: 20%;
+    right: 10%;   
+    animation-name: updown4;
+    animation-duration: 2.5s;
+    -webkit-animation-iteration-count: infinite;
+}  
+@keyframes updown {
+    0%{
+        /* position: relative; */
+        /* bottom: 10%; */
+        /* transform:scale(1.1); */
+        left: 10%;
+    }
+    50%{
+        /* position: relative; */
+        /* bottom: 10.5%;  */
+        /* transform:scale(1); */
+        left: 11%;
+    }
+    
+}
+@keyframes updown2 {
+    0%{
+        top: 10%;
+    }
+    50%{
+        top: 9%;
+    }
+}
+@keyframes updown3 {
+    0%{
+        bottom: 25%;
+    }
+    50%{
+        bottom: 24%;
+    }
+}
+@keyframes updown4 {
+    0%{
+        right: 10%;
+    }
+    50%{
+        right: 11%;
+    }
+}
+
+
