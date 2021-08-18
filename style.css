@@ -53,6 +53,184 @@ body{
 }
 
 
+/* -------- */
+/* Video section */
+.video {
+  background: url(assets/images/Copy\ of\ Copy\ of\ dsc-ecosystem-banners-linkedin-yellow.png);
+  background-size: cover;
+  width: 100%;
+  margin: 2% 0 3% 0;
+}
+#yt-video {
+  border-radius: 4%;
+  margin: 5.3% 4% 5% 8%;
+  box-shadow: 5px 7px 15px rgba(22, 20, 20, 0.658);
+}
+#video-cap {
+  margin-top: 15%;
+  margin-left: 10%;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-shadow: 2px 3px 7px rgba(22, 20, 20, 0.527);
+}
+/* -------- */
+
+
+/* ------- */
+/* Connect with us */
+.container{
+  margin:2% 1% 4% 1%;
+}
+.contt {
+  justify-content: center;
+}
+.contt h2 {
+  font-size: 4.5rem;
+  /* text-align: center; */
+}
+.contt img {
+  width: 80%;
+  justify-content: center;
+  /* height: 50px; */
+}
+.imgr {
+  border-radius: 80%;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+}
+.imgr img {
+  border-radius: 50%;
+  size: 1rem;
+}
+
+.fab {
+    padding:5%;
+    font-size: 1.2rem;
+  text-align: left;
+  text-decoration: none;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+.fa-facebook:hover{
+  transform: rotate(360deg);
+  background: #3b5998;
+  color:#fff;
+  transition: 380ms ease-in-out;
+}
+.fa-instagram{
+    color:#bc2a8d;
+}
+.fa-instagram:hover{
+  transform: rotate(360deg);
+  background-color: #bc2a8d;
+  color: #fbad50;
+  transition: 380ms ease-in-out;
+}
+.fa-linkedin{
+    color:#0077b5;
+}
+.fa-linkedin:hover{
+  transform: rotate(360deg);
+  background-color: #0077b5;
+  color: yellow;
+  transition: 380ms ease-in-out;
+}
+
+.fa-twitter:hover{
+  transform: rotate(360deg);
+  background-color: #0077b5;
+  color: rgb(12, 12, 11);
+  transition: 380ms ease-in-out;
+}
+
+.insta,
+.fb,
+.twi,
+.linkd {
+  border: 2px solid black;
+  width: 25%;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+.insta {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  animation-name: updown;
+  animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+.fb {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  animation-name: updown2;
+  animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+.twi {
+  position: absolute;
+  bottom: 25%;
+  right: 1%;
+  animation-name: updown3;
+  animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+.linkd {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  animation-name: updown4;
+  animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes updown {
+  0% {
+    /* position: relative; */
+    /* bottom: 10%; */
+    /* transform:scale(1.1); */
+    left: 10%;
+  }
+  50% {
+    /* position: relative; */
+    /* bottom: 10.5%;  */
+    /* transform:scale(1); */
+    left: 11%;
+  }
+}
+@keyframes updown2 {
+  0% {
+    top: 10%;
+  }
+  50% {
+    top: 9%;
+  }
+}
+@keyframes updown3 {
+  0% {
+    bottom: 25%;
+  }
+  50% {
+    bottom: 24%;
+  }
+}
+@keyframes updown4 {
+  0% {
+    right: 10%;
+  }
+  50% {
+    right: 11%;
+  }
+}
+/* Connect with us */
+/* ------- */
+
 
 
 /* EVERYTHING IN THE FOOTER */
