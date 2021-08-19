@@ -62,12 +62,39 @@ body{
   margin: 2% 0 3% 0;
 }
 #yt-video {
+  height:17.625rem;  
+  width:30rem;
   border-radius: 4%;
   margin: 5.3% 4% 5% 8%;
   box-shadow: 5px 7px 15px rgba(22, 20, 20, 0.658);
 }
 #video-cap {
-  margin-top: 15%;
+  margin-top: 19%;
+  margin-left: 10%;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-shadow: 2px 3px 7px rgba(22, 20, 20, 0.527);
+}
+/* -------- */
+
+
+/* -------- */
+/* Video section */
+.video {
+  background: url(assets/images/Copy\ of\ Copy\ of\ dsc-ecosystem-banners-linkedin-yellow.png);
+  background-size: cover;
+  width: 100%;
+  margin: 2% 0% 3% 0%; 
+}
+#yt-video {
+  height:17.625rem;  
+  width:30rem;
+  border-radius: 4%;
+  margin: 5.3% 4% 5% 8%;
+  box-shadow: 5px 7px 15px rgba(22, 20, 20, 0.658);
+}
+#video-cap {
+  margin-top: 19%;
   margin-left: 10%;
   font-size: 2.5rem;
   font-weight: 400;
@@ -79,13 +106,13 @@ body{
 /* ------- */
 /* Connect with us */
 .container{
-  margin:2% 1% 4% 1%;
+  margin:2% 0 4% 0;
 }
 .contt {
   justify-content: center;
 }
 .contt h2 {
-  font-size: 4.5rem;
+  font-size: 4rem;
   /* text-align: center; */
 }
 .contt img {
@@ -113,38 +140,37 @@ body{
 }
 
 .fa-facebook {
-  color: #3b5998;
+  color: white;
 }
 
 .fa-facebook:hover{
   transform: rotate(360deg);
-  background: #3b5998;
-  color:#fff;
+  color:black;
   transition: 380ms ease-in-out;
 }
 .fa-instagram{
-    color:#bc2a8d;
+    color:white;
 }
 .fa-instagram:hover{
   transform: rotate(360deg);
-  background-color: #bc2a8d;
   color: #fbad50;
   transition: 380ms ease-in-out;
 }
 .fa-linkedin{
-    color:#0077b5;
+    color:white;
 }
 .fa-linkedin:hover{
   transform: rotate(360deg);
-  background-color: #0077b5;
   color: yellow;
   transition: 380ms ease-in-out;
 }
 
+.fa-twitter{
+  color: white;
+}
 .fa-twitter:hover{
   transform: rotate(360deg);
-  background-color: #0077b5;
-  color: rgb(12, 12, 11);
+  color: #657786;
   transition: 380ms ease-in-out;
 }
 
@@ -154,10 +180,12 @@ body{
 .linkd {
   border: 2px solid black;
   width: 25%;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   border-radius: 5px;
 }
 .insta {
+  color: white;
+  background-color: #8a3ab9;
   position: absolute;
   bottom: 10%;
   left: 10%;
@@ -165,7 +193,13 @@ body{
   animation-duration: 2.5s;
   -webkit-animation-iteration-count: infinite;
 }
+.insta:hover{
+  color: #fbad50;
+  transition: 300ms ease-in-out;
+}
 .fb {
+  background-color: #3b5998;
+  color: #fff;
   position: absolute;
   top: 10%;
   left: 10%;
@@ -173,7 +207,13 @@ body{
   animation-duration: 2.5s;
   -webkit-animation-iteration-count: infinite;
 }
+.fb:hover{
+  color: black;
+  transition: 300ms ease-in-out;
+}
 .twi {
+  background-color:#1da1f2;
+  color: #fff;
   position: absolute;
   bottom: 25%;
   right: 1%;
@@ -181,13 +221,23 @@ body{
   animation-duration: 2.5s;
   -webkit-animation-iteration-count: infinite;
 }
+.twi:hover{
+  color:#657786;
+  transition: 300ms ease-in-out;
+}
 .linkd {
+  color: #fff;
+  background-color: #0077b5;
   position: absolute;
   top: 20%;
   right: 10%;
   animation-name: updown4;
   animation-duration: 2.5s;
   -webkit-animation-iteration-count: infinite;
+}
+.linkd:hover{
+  color: yellow;
+  transition: 300ms ease-in-out;
 }
 
 @keyframes updown {
