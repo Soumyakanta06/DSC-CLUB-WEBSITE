@@ -14,12 +14,14 @@ body{
 
 /* UTILITIES */
 .uti{
+
 height: 2px !important;
 position: relative;
 width: 50%;
 top: -1px;
 left: 50%;
 transform: translateX(-50%);
+
 }
 
 /* Navbar Section */
@@ -30,6 +32,7 @@ justify-content:space-between;
 }
 
 .btn{
+
 padding: 10px;
 background: #54bb18;
 color:#fff;
@@ -37,6 +40,7 @@ cursor: pointer;
 font-size: 10px;
 font-weight: 700;
 align-items: center;
+
 }
 
 /* ------------------------ */
@@ -107,6 +111,31 @@ text-shadow: 2px 3px 7px rgba(22, 20, 20, 0.527);
 .container{
 margin:2% 0 4% 0;
 }
+
+
+
+/* -------- */
+/* Video section */
+.video {
+  background: url(assets/images/Copy\ of\ Copy\ of\ dsc-ecosystem-banners-linkedin-yellow.png);
+  background-size: cover;
+  width: 100%;
+  margin: 2% 0% 3% 0%; 
+}
+#yt-video {
+  height:17.625rem;  
+  width:30rem;
+  border-radius: 4%;
+  margin: 5.3% 4% 5% 8%;
+  box-shadow: 5px 7px 15px rgba(22, 20, 20, 0.658);
+}
+#video-cap {
+  margin-top: 19%;
+  margin-left: 10%;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-shadow: 2px 3px 7px rgba(22, 20, 20, 0.527);
+=======
 .contt {
 justify-content: center;
 }
@@ -140,143 +169,192 @@ text-decoration: none;
 
 .fa-facebook {
 color: white;
+
+}
+/* -------- */
+
+
+
+/* ------- */
+/* Connect with us */
+.container{
+  margin:2% 0 4% 0;
+}
+.contt {
+  justify-content: center;
+}
+.contt h2 {
+  font-size: 4rem;
+  /* text-align: center; */
+}
+.contt img {
+  width: 80%;
+  justify-content: center;
+  /* height: 50px; */
+}
+.imgr {
+  border-radius: 80%;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+}
+.imgr img {
+  border-radius: 50%;
+  size: 1rem;
+}
+
+.fab {
+    padding:5%;
+    font-size: 1.2rem;
+  text-align: left;
+  text-decoration: none;
+}
+
+.fa-facebook {
+  color: white;
 }
 
 .fa-facebook:hover{
-transform: rotate(360deg);
-color:black;
-transition: 380ms ease-in-out;
+  transform: rotate(360deg);
+  color:black;
+  transition: 380ms ease-in-out;
 }
 .fa-instagram{
-  color:white;
+    color:white;
 }
 .fa-instagram:hover{
-transform: rotate(360deg);
-color: #fbad50;
-transition: 380ms ease-in-out;
+  transform: rotate(360deg);
+  color: #fbad50;
+  transition: 380ms ease-in-out;
 }
 .fa-linkedin{
-  color:white;
+    color:white;
 }
 .fa-linkedin:hover{
-transform: rotate(360deg);
-color: yellow;
-transition: 380ms ease-in-out;
+  transform: rotate(360deg);
+  color: yellow;
+  transition: 380ms ease-in-out;
 }
 
 .fa-twitter{
-color: white;
+  color: white;
 }
 .fa-twitter:hover{
-transform: rotate(360deg);
-color: #657786;
-transition: 380ms ease-in-out;
-}
+  transform: rotate(360deg);
+  color: #657786;
+  transition: 380ms ease-in-out;
+
+
+
 
 .insta,
 .fb,
 .twi,
 .linkd {
-border: 2px solid black;
-width: 25%;
-font-size: 1.25rem;
-border-radius: 5px;
+
+  border: 2px solid black;
+  width: 25%;
+  font-size: 1.25rem;
+  border-radius: 5px;
 }
 .insta {
-color: white;
-background-color: #8a3ab9;
-position: absolute;
-bottom: 10%;
-left: 10%;
-animation-name: updown;
-animation-duration: 2.5s;
--webkit-animation-iteration-count: infinite;
+  color: white;
+  background-color: #8a3ab9;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  animation-name: updown;
+  animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
 }
 .insta:hover{
-color: #fbad50;
-transition: 300ms ease-in-out;
+  color: #fbad50;
+  transition: 300ms ease-in-out;
 }
 .fb {
-background-color: #3b5998;
-color: #fff;
-position: absolute;
-top: 10%;
-left: 10%;
-animation-name: updown2;
-animation-duration: 2.5s;
--webkit-animation-iteration-count: infinite;
+  background-color: #3b5998;
+  color: #fff;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  animation-name: updown2;
+  animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
 }
 .fb:hover{
-color: black;
-transition: 300ms ease-in-out;
+  color: black;
+  transition: 300ms ease-in-out;
 }
 .twi {
-background-color:#1da1f2;
-color: #fff;
-position: absolute;
-bottom: 25%;
-right: 1%;
-animation-name: updown3;
-animation-duration: 2.5s;
--webkit-animation-iteration-count: infinite;
+  background-color:#1da1f2;
+  color: #fff;
+  position: absolute;
+  bottom: 25%;
+  right: 1%;
+  animation-name: updown3;
+  animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
 }
 .twi:hover{
-color:#657786;
-transition: 300ms ease-in-out;
+  color:#657786;
+  transition: 300ms ease-in-out;
 }
 .linkd {
-color: #fff;
-background-color: #0077b5;
-position: absolute;
-top: 20%;
-right: 10%;
-animation-name: updown4;
-animation-duration: 2.5s;
--webkit-animation-iteration-count: infinite;
+  color: #fff;
+  background-color: #0077b5;
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  animation-name: updown4;
+  animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
 }
 .linkd:hover{
-color: yellow;
-transition: 300ms ease-in-out;
+  color: yellow;
+  transition: 300ms ease-in-out;
 }
 
 @keyframes updown {
-0% {
-  /* position: relative; */
-  /* bottom: 10%; */
-  /* transform:scale(1.1); */
-  left: 10%;
-}
-50% {
-  /* position: relative; */
-  /* bottom: 10.5%;  */
-  /* transform:scale(1); */
-  left: 11%;
-}
+  0% {
+    /* position: relative; */
+    /* bottom: 10%; */
+    /* transform:scale(1.1); */
+    left: 10%;
+  }
+  50% {
+    /* position: relative; */
+    /* bottom: 10.5%;  */
+    /* transform:scale(1); */
+    left: 11%;
+  }
 }
 @keyframes updown2 {
-0% {
-  top: 10%;
-}
-50% {
-  top: 9%;
-}
+  0% {
+    top: 10%;
+  }
+  50% {
+    top: 9%;
+  }
 }
 @keyframes updown3 {
-0% {
-  bottom: 25%;
-}
-50% {
-  bottom: 24%;
-}
+  0% {
+    bottom: 25%;
+  }
+  50% {
+    bottom: 24%;
+  }
 }
 @keyframes updown4 {
-0% {
-  right: 10%;
+  0% {
+    right: 10%;
+  }
+  50% {
+    right: 11%;
+  }
 }
-50% {
-  right: 11%;
-}
-}
+
+
 /* Connect with us */
 /* ------- */
 
@@ -284,59 +362,75 @@ transition: 300ms ease-in-out;
 
 /* EVERYTHING IN THE FOOTER */
 .foot-row{
-  display: flex;
-  
-  flex-wrap: wrap;
-  
+
+    display: flex;
+    
+    flex-wrap: wrap;
+    
 }
 .col1{
-  
-  width: 491px;
-  margin: auto;
+    
+    width: 491px;
+    margin: auto;
 }
 
 .foot-logo{
-  position: relative !important;
-  top: -45px !important;
+    position: relative !important;
+    top: -45px !important;
+    
+    display: inline-block !important;
+    width: 63px !important;
+    left: 10px !important;
+    padding-top: 30px !important;
+    padding-left: 4px !important;
+
+ 
   
-  display: inline-block !important;
-  width: 63px !important;
-  left: 10px !important;
-  padding-top: 30px !important;
-  padding-left: 4px !important;
+
+  
 }
+
+
+
+
 .foot-img{
   width: 60px !important;
   height: 30px;
 }
 .heading{
-  display: inline-block !important;
-  
-  margin-left: 20px !important;
-  font-family: 'Asap Condensed', sans-serif !important;
-  position: relative !important;
-  bottom: -70%;
+
+    display: inline-block !important;
+    
+    margin-left: 20px !important;
+    font-family: 'Asap Condensed', sans-serif !important;
+    position: relative !important;
+    bottom: -70%;
 }
 
 .contents-para{
-  position: relative;
-  top: 8px;
-  text-align: left;
-  font-size: 19px;
+    position: relative;
+    top: 8px;
+    text-align: left;
+    font-size: 19px;
+    
+    font-family: 'Open Sans', sans-serif;
+    color: #999;
+    background-color: transparent;
+    font-weight: bolder;
+
   
-  font-family: 'Open Sans', sans-serif;
-  color: #999;
-  background-color: transparent;
-  font-weight: bolder;
 }
 
 
+
+
 .col2{
-  position: relative;
-  
-  width: 350px;
-  
-  margin: auto;
+
+    position: relative;
+    
+    width: 350px;
+    
+    margin: auto;
 
 }
 .col2>h2{
@@ -345,24 +439,27 @@ transition: 300ms ease-in-out;
   margin-bottom: 15px;
 }
 .foot-col2-t{
-  font-size: 17px;
-  font-family: 'Open Sans', sans-serif;
-  
-  color: #999;
-  background-color: transparent;
-  text-decoration-line: none;
-  font-weight: bolder;
-  
+
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    
+    color: #999;
+    background-color: transparent;
+    text-decoration-line: none;
+    font-weight: bolder;
+    
+
 }
 .foot-col2-t:hover{
   color: white;
 }
 .col3{
-  position: relative;
-  
-  width: 287px;
-  
-  margin: auto;
+
+    position: relative;
+    
+    width: 287px;
+    
+    margin: auto;
 
   
 }
@@ -386,11 +483,13 @@ transition: 300ms ease-in-out;
 line-height: 25px !important;
 }
 .col3-socialmedia{
-  
-  position: relative;
-  top: 3px;
-  left: -50px;
-  
+
+    
+    position: relative;
+    top: 3px;
+    left: -50px;
+    
+
 }
 .col3-socialmedia ul{
   display: flex;
@@ -406,7 +505,9 @@ line-height: 25px !important;
   color: #000;
 }
 .col3-socialmedia ul li .fab:hover{
-  color:white;
+
+    color:white;
+
 }
 
 
@@ -433,22 +534,23 @@ footer{
 
 }
 .foot-container{
-  padding-top: 33px;
-  padding-right: 38px;
-  padding-left: 15px;
-  margin-right: 47px;
-  margin-left: 48px;
-  
+
+    padding-top: 33px;
+    padding-right: 38px;
+    padding-left: 15px;
+    margin-right: 47px;
+    margin-left: 48px;
+    
 }
 .footer-text{
-  height: 155px;
-  text-align: center;
-  
-  padding-top: 20px;
-  color: #999;
-  background-color: transparent;
-  
-}
+    height: 155px;
+    text-align: center;
+    
+    padding-top: 20px;
+    color: #999;
+    background-color: transparent;
+    
+
 .text-col{
   max-width: 100%;
 }
