@@ -126,7 +126,7 @@ body {
   transition: 300ms ease-in-out;
 }
 
-.text {
+.text-team{
   background-size: cover;
   font-family: "Roboto", "serif";
   color: white;
