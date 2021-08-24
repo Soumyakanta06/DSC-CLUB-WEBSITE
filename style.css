@@ -114,10 +114,7 @@ body {
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: #0f9d58a4;
-  /* background-color: #db4537bd; red*/
-  /* background-color: #429ef48f; blue */
-  /* background-color: #f4b30098; yellow */
+  background-color: rgba(0, 0, 0, 0.541);
 }
 
 .card:hover .overlay {
@@ -144,7 +141,17 @@ body {
 }
 
 .card a:hover{
-  transform: scale(1.23);
+  transform: scale(1.2);
+}
+
+.card .fa-facebook:hover{
+  color: #1244af;
+}
+.card .fa-instagram:hover{
+  color: #fbad50;
+}
+.card .fa-linkedin:hover{
+  color:#0077b5;
 }
 /* ------ */
 
