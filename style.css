@@ -148,6 +148,108 @@ body {
 }
 /* ------ */
 
+
+/* -------- */
+/* FAQ Section */
+/* Title */
+.title{
+  padding: 10px 5px 5px 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Accordian */
+
+.container{
+  align-items: center;
+
+}
+/* Each Box */
+.box_item{
+  background: transparent;
+  border: none; /*bottom line display*/
+  margin-top: 15px;
+  margin-bottom: 15px ;
+  box-shadow: 0 2px 20px 0 rgba(110, 130, 208, .18);
+
+}
+
+.accordion-button:focus{
+  outline: 0 !important;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+  background: #fff !important;
+  color: black !important;
+}
+
+.accordion-header{
+  background-color: transparent !important;
+  border: none !important;
+  text-decoration: none;
+  
+}
+
+/* Question */
+.question{
+  background: #fff;
+  color: #000;
+  width: 100%;
+  height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  padding: 5px;
+}
+
+.question p{
+  margin: 10px;
+}
+
+.question::after{
+  margin-right: 15px;
+}
+
+.question::before{
+  content: '';
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  background: #fff;
+  z-index: 1;
+  transform: rotate(45deg);
+  left: 30px;
+  top: 45px;
+}
+
+/* Answer */
+.text{
+  background-color: green;
+  color: #fff;
+  border: none;
+  border-radius:0 0 5px 5px;
+  text-align: justify;
+  
+}
+
+
+/* Image */
+
+.right_image{
+  align-items: center;
+  
+}
+
+.right_image img{
+  width: 100%;
+  margin-top: -10px;
+  padding-left: 10px;
+}
+
+/* -------- */
+
+
 /* ------- */
 /* Connect with us */
 .container{
