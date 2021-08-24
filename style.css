@@ -76,6 +76,79 @@ body {
 
 
 /* ------- */
+/* Our Team */
+.container-1 {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  text-align: center;
+  margin: 3% 0 3% 0;
+}
+
+#team {
+  font-size: 3rem;
+  text-decoration: underline 2px black;
+  text-align: center;
+}
+
+.card {
+  display: inline-flex !important;
+  margin: 0% 5% 3% 5%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #0f9d58a4;
+  /* background-color: #db4537bd; red*/
+  /* background-color: #429ef48f; blue */
+  /* background-color: #f4b30098; yellow */
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.card:hover.image {
+  transform: scale(1.05);
+  transition: 300ms ease-in-out;
+}
+
+.text {
+  background-size: cover;
+  font-family: "Roboto", "serif";
+  color: white;
+  font-size: 1.2rem;
+  padding: 35% 3% 20% 3%;
+  text-align: center;
+}
+
+.card a{
+  font-size: 1.1rem !important;
+  padding: 3% 2.5% 0 2.5%;
+}
+
+.card a:hover{
+  transform: scale(1.23);
+}
+/* ------ */
+
+/* ------- */
 /* Connect with us */
 .container{
   margin:2% 0 4% 0;
