@@ -50,29 +50,107 @@ body {
   text-align: justify;
 }
 
+
 /* -------- */
 /* Video section */
-.video {
+.row-video {
   background: url(assets/images/Copy\ of\ Copy\ of\ dsc-ecosystem-banners-linkedin-yellow.png);
+  display: flex;
+  flex-wrap: wrap;
+  background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  margin: 2% 0% 3% 0%; 
+  margin: 3% 0 3% 0;
 }
+
 #yt-video {
-  height:17.625rem;  
-  width:30rem;
   border-radius: 4%;
-  margin: 5.3% 4% 5% 8%;
-  box-shadow: 5px 7px 15px rgba(22, 20, 20, 0.658);
+  width: 30rem;
+  height: 18rem;
+  margin:3%;
+  box-shadow: 5px 5px 15px rgba(22, 20, 20, 0.658);
 }
-#video-cap {
-  margin-top: 19%;
-  margin-left: 10%;
+
+
+.featurette-heading{
   font-size: 2.5rem;
-  font-weight: 400;
-  text-shadow: 2px 3px 7px rgba(22, 20, 20, 0.527);
+  margin: 10% 0 0 15%;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.521);
+}
+@media screen and (max-width:1091px) {
+  #yt-video {
+    border-radius: 4%;
+    width: 30rem;
+    height: 18rem;
+    margin:3% 2% 2% 27%;
+    box-shadow: 5px 5px 15px rgba(22, 20, 20, 0.658);
+  }
+  .featurette-heading{
+    margin:1% 0 1% 30%;
+  }
+}
+
+@media screen and (max-width:900px) {
+  #yt-video {
+    border-radius: 4%;
+    width: 30rem;
+    height: 18rem;
+    margin:3% 5% 2% 24%;
+    box-shadow: 5px 5px 15px rgba(22, 20, 20, 0.658);
+  }
+  .featurette-heading{
+    margin:1% 0 1% 26.8%;
+  }
+}
+
+@media screen and (max-width:840px) {
+  #yt-video {
+    border-radius: 4%;
+    width: 30rem;
+    height: 18rem;
+    margin:3% 5% 2% 21.6%;
+    box-shadow: 5px 5px 15px rgba(22, 20, 20, 0.658);
+  }
+  .featurette-heading{
+    margin:1% 0 1% 23%;
+  }
+}
+
+@media screen and (max-width:800px) {
+  #yt-video {
+    border-radius: 4%;
+    width: 28rem;
+    height: 16rem;
+    margin:auto;
+    margin-top: 3%;  
+    box-shadow: 5px 5px 15px rgba(22, 20, 20, 0.658);
+  }
+  .featurette-heading{
+    font-size: 2rem;
+    margin:auto;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  #yt-video {
+    border-radius: 4%;
+    width: 20rem;
+    height: 12rem;
+    margin:auto;
+    margin-top: 3%;  
+    box-shadow: 5px 5px 15px rgba(22, 20, 20, 0.658);
+  }
+  .featurette-heading{
+    font-size: 1.5rem;
+    margin:auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
 }
 /* -------- */
+
 
 /* -------- */
 /* Sections */
