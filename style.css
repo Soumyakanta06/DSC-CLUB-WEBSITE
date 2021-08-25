@@ -74,6 +74,66 @@ body {
 }
 /* -------- */
 
+/* -------- */
+/* Sections */
+
+.sections{
+  padding: 20px;
+
+}
+/* Title */
+.sections .head{
+  padding: 10px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #000;
+  font-size: 40px;
+  font-weight: bold;
+}
+.theme{
+  align-items: center;
+  justify-content: center;
+  padding: 10px   
+
+}
+
+/* Project */
+.project{
+  margin: 40px 40px 50px 15px;
+  padding: 90px;
+  background-position: center;
+
+}
+
+.project .p_img{
+  margin-top: -150px;   
+}
+
+/* Hackathon */
+.hackathon{
+  margin:40px 30px 50px 15px;
+  padding: 90px;
+  background-position: center;
+}
+
+.hackathon .h_img{
+  margin-top: -90px;  
+}
+
+/*Event*/
+.event{
+  margin:40px 30px 50px 3px;
+  padding: 90px;
+  background-position: center;
+}
+
+.event .e_img{
+  margin-top: -70px;
+  margin-right: -100px;
+  
+}
+/* -------- */
 
 /* ------- */
 /* Our Team */
