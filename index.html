@@ -303,39 +303,7 @@
         </div>
     </div>
 
-    <-- <div id="map"></div>
-    <script>
-
-        function initMap() {
-            //    OPTIONS FOR MAP
-            const CETB = { lat: 20.2758, lng: 85.7766 }
-            var options = {
-                zoom: 15,
-                center: CETB
-            }
-            // CREATED THE MAP HERE
-            var map = new google.maps.Map(document.getElementById('map'), options);
-
-            // MARKER
-            const marker = new google.maps.Marker({
-                position: CETB,
-                map: map
-            });
-
-            const infowindow = new google.maps.InfoWindow({
-                content: `<h4 style="font-size:15px; font-family: 'Mulish', sans-serif; font-weight: bold; ">Google Developer Students Club CETB</h4>`,
-            });
-            marker.addListener("mouseover", () => {
-                infowindow.open({
-                    anchor: marker,
-                    map,
-
-                });
-            });
-
-        }
-    </script> -->
-
+    
     <!-- Footer -->
     <footer id="site-foo">
         <div class="foot-container">
