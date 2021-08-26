@@ -229,9 +229,21 @@ body {
   text-align: center;
 }
 
+
 .card {
   display: inline-flex !important;
   margin: 0% 5% 3% 5%;
+
+#video-cap {
+  margin-top: 19%;
+  margin-left: 10%;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-shadow: 2px 3px 7px rgba(22, 20, 20, 0.527);
+}
+.contt {
+justify-content: center;
+
 }
 
 .image {
@@ -464,7 +476,11 @@ body {
   transform: rotate(360deg);
   color: #657786;
   transition: 380ms ease-in-out;
+
 }
+
+
+
 
 .insta,
 .fb,
@@ -575,9 +591,34 @@ body {
 
 
 
-/* EVERYTHING IN THE FOOTER */
-.foot-row {
-  display: flex;
+
+/*  FOOTER */
+.foot-row{
+
+    display: flex;
+    
+    flex-wrap: wrap;
+    
+}
+.col1{
+    
+    width: 491px;
+    margin: auto;
+}
+
+.foot-logo{
+    position: relative !important;
+    top: -45px !important;
+    
+    display: inline-block !important;
+    width: 63px !important;
+    left: 10px !important;
+    padding-top: 30px !important;
+    padding-left: 4px !important;
+
+ 
+  
+
 
   flex-wrap: wrap;
 }
@@ -621,12 +662,18 @@ body {
   font-weight: bolder;
 }
 
-.col2 {
-  position: relative;
 
-  width: 350px;
 
-  margin: auto;
+.col2{
+
+    position: relative;
+    
+    width: 350px;
+    
+    margin: auto;
+    text-align: center;
+   
+
 }
 .col2 > h2 {
   font-size: 21px;
@@ -648,15 +695,22 @@ body {
 .col3 {
   position: relative;
 
+
   width: 287px;
 
   margin: auto;
+
+    text-align: center;
+  
 }
-.col3 > h2 {
-  font-size: 21px;
-  font-family: "Mulish", sans-serif;
-  text-align: left;
-  margin-bottom: 16px;
+.col3>h2{
+    font-size: 21px;
+    font-family: 'Mulish', sans-serif;
+    /* text-align: left; */
+    margin-bottom: 16px;
+    
+
+
 }
 .col3-para {
   color: #999;
@@ -668,10 +722,17 @@ body {
 .col3-para .fa-map-marker-alt {
   line-height: 25px !important;
 }
-.col3-socialmedia {
-  position: relative;
-  top: 3px;
-  left: -50px;
+
+.col3-socialmedia{
+
+    
+    position: relative;
+    top: 3px;
+    /* left: -50px; */
+    left: inherit;
+    
+
+
 }
 .col3-socialmedia ul {
   display: flex;
@@ -720,15 +781,19 @@ footer {
   margin-right: 47px;
   margin-left: 48px;
 }
-.footer-text {
-  height: 155px;
-  text-align: center;
 
-  padding-top: 20px;
-  color: #999;
-  background-color: transparent;
+
+.footer-text{
+    height: 155px;
+    text-align: center;
+    
+    padding-top: 20px;
+    color: #999;
+    background-color: transparent;
+    
 }
-.text-col {
+.text-col{
+
   max-width: 100%;
 }
 hr {
@@ -837,3 +902,10 @@ hr {
 }
 
 /*FOOTER ENDS HERE*/
+
+
+
+
+
+
+

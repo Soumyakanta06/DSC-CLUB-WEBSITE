@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
 
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
@@ -29,35 +29,63 @@
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Doppio+One&family=IM+Fell+English+SC&display=swap"
+        rel="stylesheet">
+
+    <!-- FOR MAP -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTRbSwPbCiD7Y6ZsV6jD3u3OwEA-TC6x4&callback=initMap">
+        </script>
+
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+            margin-bottom: 34px;
+            
+        }
+    </style>
+
 </head>
 
 <body>
+   
+    <!-- About Us -->
+
+    <section id="about">
+        <div class="about_us">
+            <div class="row p-5 align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="assets/images/about-bg.png" class="abt-img img-fluid" alt="">
+                </div>
+                <div class="abt-text col-md px-5">
+                    <h2>Who We Are </h2>
+                    <p>𝓖𝓸𝓸𝓰𝓵𝓮 𝓓𝓮𝓿𝓮𝓵𝓸𝓹𝓮𝓻 𝓢𝓽𝓾𝓭𝓮𝓷𝓽 𝓒𝓵𝓾𝓫𝓼 is a community designed to help
+                        students convert their creative ideas into real life projects and develop their technical skills
+                        with the help of google products.</p>
+
+                    <p>The Club intends to be a space for students to try out new ideas and collaborate to solve mobile
+                        and web development problems, cloud, Machine learning, etc.</p>
+
+                    <p>It is open to any student, ranging from novice developers who are just starting, to advanced
+                        developers who want to further enhance their skills. Its main motive is to successfully build a
+                        friendly community engaging the members to learn in a peer-to-peer environment and share best
+                        practices with one another.</p>
+
+                    <p>The Developers Club connects everyone with similar technical interests and passion and helps them
+                        stand out with valuable skills.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
     
-
-  <!-- About Us -->
-
-  <section id="about">
-    <div class="about_us">
-      <div class="row p-5 align-items-center justify-content-between">
-        <div class="col-md">
-          <img src="assets/images/about-bg.png" class="abt-img img-fluid" alt="">
-        </div>
-        <div class="abt-text col-md px-5">
-          <h2>Who We Are </h2>
-          <p>𝓖𝓸𝓸𝓰𝓵𝓮 𝓓𝓮𝓿𝓮𝓵𝓸𝓹𝓮𝓻 𝓢𝓽𝓾𝓭𝓮𝓷𝓽 𝓒𝓵𝓾𝓫𝓼 is a community designed to help students convert their creative ideas into real life projects and develop their technical skills with the help of google products.</p>
-
-          <p>The Club intends to be a space for students to try out new ideas and collaborate to solve mobile and web development problems, cloud, Machine learning, etc.</p>
-            
-          <p>It is open to any student, ranging from novice developers who are just starting, to advanced developers who want to further enhance their skills. Its main motive is to successfully build a friendly community engaging the members to learn in a peer-to-peer environment and share best practices with one another.</p>
-            
-          <p>The Developers Club connects everyone with similar technical interests and passion and helps them stand out with valuable skills.</p>
-
-        </div>
-
-      </div>
-
-    </div>
-  </section>
     
     
      <!-- Video section -->
@@ -249,6 +277,16 @@
                    </div>
                </div>
 
+
+    <!-- Video section -->
+    <div class="video">
+        <div class="row">
+            <div class="col-6">
+                <iframe id="yt-video" src="https://www.youtube.com/embed/5HStQYsx5FE?&autoplay=1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
             </div>
 
             <div class="right_image col-md px-2">
@@ -289,10 +327,40 @@
 
         </div>
     </div>
-    
 
-    
-    
+    <div id="map"></div>
+    <script>
+
+        function initMap() {
+            //    OPTIONS FOR MAP
+            const CETB = { lat: 20.2758, lng: 85.7766 }
+            var options = {
+                zoom: 15,
+                center: CETB
+            }
+            // CREATED THE MAP HERE
+            var map = new google.maps.Map(document.getElementById('map'), options);
+
+            // MARKER
+            const marker = new google.maps.Marker({
+                position: CETB,
+                map: map
+            });
+
+            const infowindow = new google.maps.InfoWindow({
+                content: `<h4 style="font-size:15px; font-family: 'Mulish', sans-serif; font-weight: bold; ">Google Developer Students Club CETB</h4>`,
+            });
+            marker.addListener("mouseover", () => {
+                infowindow.open({
+                    anchor: marker,
+                    map,
+
+                });
+            });
+
+        }
+    </script>
+
     <!-- Footer -->
     <footer id="site-foo">
         <div class="foot-container">
@@ -380,18 +448,21 @@
             </div>
         </div>
     </footer>
+
+
+
     <!-- Bootstrap JS -->
-    
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    <script src="https://maxcdn.bootstrapcdn.com/bootst~rap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
