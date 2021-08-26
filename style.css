@@ -11,6 +11,75 @@ body {
   overflow-x: hidden;
 }
 
+
+/* ---- */
+/* Banner */
+.banner{
+  width:100%;
+  align-items: center;
+}
+.banner img{
+  height:42rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 1300px) {
+  .banner img {
+    height: 32rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .banner img {
+    height: 28rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .banner img {
+    height: 25rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 858px) {
+  .banner img {
+    height: 23.6rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner img {
+    height: 22.4rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .banner img {
+    height: 20rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .banner img {
+    height: 12.5rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .banner img {
+    height: 10rem;
+    width: 100%;
+  }
+}
+/* ------- */
+
 /* UTILITIES */
 .uti {
   height: 2px !important;
