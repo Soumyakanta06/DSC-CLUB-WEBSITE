@@ -247,8 +247,18 @@ body {
   background-position: center;
 }
 
-.project .p_img {
-  margin-top: -150px;
+
+.project .p_img{
+  margin-top: -150px;  
+  /* height: 200px;  */
+  position: relative;
+  top: -10px;
+  width: 900px;
+  height: 280px;
+  animation-name: slideanimate1;
+  animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+
 }
 
 /* Hackathon */
@@ -258,8 +268,18 @@ body {
   background-position: center;
 }
 
-.hackathon .h_img {
-  margin-top: -90px;
+.hackathon .h_img{
+  margin-top: -90px;  
+  position: relative;
+  top: -30px;
+  width: 700px;
+  height: 250px;
+  animation-name: slideanimate2;
+  animation-duration: 11s;
+  -webkit-animation-iteration-count: infinite;
+  /* transform: animate 2s ease-in-out; */
+  transition: position 0.5s ease-in-out;
+
 }
 
 /*Event*/
@@ -272,7 +292,84 @@ body {
 .event .e_img {
   margin-top: -70px;
   margin-right: -100px;
+  position: relative;
+  top: -10px;
+  width: 600px;
+  height: 300px;
+  animation-name: slideanimate1;
+  animation-duration: 12s;
+  -webkit-animation-iteration-count: infinite;
 }
+
+@keyframes slideanimate2 {
+  0%{
+    position: relative;
+    left: -20px;
+    /* top: -35px; */
+    /* right: -20px; */
+   
+  }
+  25%{
+    position: relative;
+    left: -10px;
+    top: -40px;
+    /* top: -40px; */
+    
+  }
+  50%{
+    position: relative;
+    left: -20px;
+    bottom: -10px;
+    /* left: -1px; */
+    
+    
+  }
+  75%{
+    position: relative;
+    /* left: -10px; */
+    left: -30px;
+    top: -40px;
+    /* bottom: -1px; */
+    
+  }
+  100%{
+    position: relative;
+    left: -20px;
+   /* right: -20px; */
+    
+  }
+}
+@keyframes slideanimate1 {
+  0%{
+    position: relative;
+    top: -20px;
+   /* right: -3px; */
+  }
+  25%{
+    position: relative;
+    top: -10px;
+    /* left: -10px; */
+  }
+  50%{
+    position: relative;
+    top: -20px;
+   /* right: -3px; */
+    
+  }
+  75%{
+    position: relative;
+    top: -10px;
+    /* left: -10px; */
+  }
+  100%{
+    position: relative;
+    top: -20px;
+   /* right: -3px; */
+    
+  }
+}
+
+
 /* -------- */
 
 /* ------- */
@@ -602,7 +699,7 @@ body {
   bottom: 10%;
   left: 10%;
   animation-name: updown;
-  animation-duration: 2.5s;
+  animation-duration: 2.3s;
   -webkit-animation-iteration-count: infinite;
 }
 .insta:hover {
@@ -630,7 +727,7 @@ body {
   bottom: 25%;
   right: 1%;
   animation-name: updown3;
-  animation-duration: 2.5s;
+  animation-duration: 2.7s;
   -webkit-animation-iteration-count: infinite;
 }
 .twi:hover {
@@ -644,7 +741,7 @@ body {
   top: 20%;
   right: 10%;
   animation-name: updown4;
-  animation-duration: 2.5s;
+  animation-duration: 2.4s;
   -webkit-animation-iteration-count: infinite;
 }
 .linkd:hover {
