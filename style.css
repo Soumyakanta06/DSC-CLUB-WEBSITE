@@ -392,6 +392,7 @@ body {
 .card {
   display: inline-flex !important;
   margin: 0% 5% 3% 5%;
+  border: none !important;
 }
 #video-cap {
   margin-top: 19%;
