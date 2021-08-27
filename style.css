@@ -396,12 +396,17 @@ body {
   border: none !important;
 }
 
-@media  screen and (max-width:480px) {
+.card img{
+  height: auto;
+  width: 100%;
+}
+
+/*@media  screen and (max-width:480px) {
   .card{
     height: 268px !important;
     width:268px !important;
   }
-}
+}*/
 
 .contt {
   justify-content: center;
