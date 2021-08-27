@@ -368,9 +368,8 @@ body {
     
   }
 }
-
-
 /* -------- */
+
 
 /* ------- */
 /* Our Team */
@@ -391,20 +390,18 @@ body {
 
 .card {
   display: inline-flex !important;
-  margin: 0% 5% 3% 8%;
+  margin: 0% 5% 3% 7%;
+  padding: 2%;
   border: none !important;
 }
-
+@media  screen and (max-width:480px) {
+  .card{
+    height: 268px !important;
+    width:268px !important;
+  }
+}
 .contt {
   justify-content: center;
-}
-
-@media screen and (max-width:480px) {
-  .card img{
-    height: 264px !important;
-    width: 288px !important;
-  
-  }
 }
 
 .image {
@@ -465,10 +462,8 @@ body {
 .card .fa-linkedin:hover {
   color: #0077b5;
 }
-.hh{
-  justify-content: center;
-}
 /* ------ */
+
 
 /* -------- */
 /* FAQ Section */
