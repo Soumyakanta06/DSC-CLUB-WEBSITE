@@ -391,18 +391,20 @@ body {
 
 .card {
   display: inline-flex !important;
-  margin: 0% 5% 3% 5%;
+  margin: 0% 5% 3% 8%;
   border: none !important;
 }
-#video-cap {
-  margin-top: 19%;
-  margin-left: 10%;
-  font-size: 2.5rem;
-  font-weight: 400;
-  text-shadow: 2px 3px 7px rgba(22, 20, 20, 0.527);
-}
+
 .contt {
   justify-content: center;
+}
+
+@media screen and (max-width:480px) {
+  .card img{
+    height: 264px !important;
+    width: 288px !important;
+  
+  }
 }
 
 .image {
