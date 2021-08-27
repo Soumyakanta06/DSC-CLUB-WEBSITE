@@ -390,16 +390,17 @@ body {
 
 .card {
   display: inline-flex !important;
-  margin: 0% 5% 3% 7%;
-  padding: 2%;
+  margin: 0% 5% 3% 5%;
   border: none !important;
 }
+
 @media  screen and (max-width:480px) {
   .card{
     height: 268px !important;
     width:268px !important;
   }
 }
+
 .contt {
   justify-content: center;
 }
